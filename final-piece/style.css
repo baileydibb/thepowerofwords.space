@@ -1,0 +1,33 @@
+main
+{
+  margin: auto;
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+main img
+{
+  width: 100%;
+  margin: auto;
+  float: none;
+  clear: both;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 1300px)
+{
+  main
+  {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  main
+  {
+    width: 90%;
+  }
+}

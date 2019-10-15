@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+body
+{
+  margin: 0px;
+  background-color: #404040;
+  color: white;
+  font-family: 'Playfair Display', Arial;
+}
+
+nav
+{
+  height: 80px;
+  background-color:#202020;
+  text-align: center;
+}
+
+#home img
+{
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  filter: brightness(80%);
+}
+
+#menu
+{
+  float: right;
+  list-style-type: none;
+  text-align: center;
+  background: #181818;
+  margin: 0px;
+  height: 80px;
+  line-height: 75px;
+}
+
+#menu li
+{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#menu li a
+{
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+#menubutton
+{
+  display: none;
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  font-size: 40px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+footer
+{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #202020;
+  text-align: center;
+  font-size: 10px;
+}
+
+footer p
+{
+  font-family: Courier;
+}
+
+@media screen and (max-width: 1300px)
+{
+  #menu
+  {
+    width: 100%;
+    background: #1A1A1A;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  #menu
+  {
+    display: none;
+    width: 100%;
+    background: #1A1A1A;
+    height: auto;
+    margin: 0px;
+  }
+
+  #menu li
+  {
+    padding: 20px 0px;
+    float: none;
+    width: 100%;
+  }
+
+  #menubutton
+  {
+    display: block;
+    background: #181818;
+    float: right;
+    width: 100%;
+  }
+}

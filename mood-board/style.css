@@ -1,0 +1,55 @@
+main
+{
+  margin: auto;
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.left
+{
+  width: 49%;
+  float: left;
+}
+
+.right
+{
+  width: 49%;
+  float: right;
+}
+
+main img
+{
+  width: 100%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+br
+{
+  clear: both;
+}
+
+#qr
+{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 1300px)
+{
+  main
+  {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  main
+  {
+    width: 90%;
+  }
+}
