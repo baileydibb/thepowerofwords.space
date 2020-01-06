@@ -1,0 +1,101 @@
+main
+{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.left
+{
+  width: 49%;
+  float: left;
+}
+
+.right
+{
+  width: 49%;
+  float: right;
+}
+
+h1
+{
+  text-align: center;
+  font-size: 70px;
+}
+
+.left h1
+{
+  font-size: 30px;
+}
+
+.right h1
+{
+  font-size: 30px;
+}
+
+#frame h1
+{
+  font-size: 30px;
+  text-align: center;
+  clear: both;
+}
+
+main img
+{
+  width: 100%;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+br
+{
+  clear: both;
+}
+
+#qr
+{
+  display: inline-block;
+  margin: auto;
+  max-width: 20%;
+  padding-bottom: 5vh;
+}
+
+#view
+{
+  display: none;
+  text-align: center;
+  height: 90vh;
+  width: 90%;
+  padding: 1% 5%;
+}
+
+#view-img
+{
+  height: 90%;
+  width: 100%;
+}
+
+#view img
+{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1300px)
+{
+  main
+  {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1000px)
+{
+  main
+  {
+    width: 90%;
+  }
+}
