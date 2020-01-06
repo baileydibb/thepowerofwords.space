@@ -97,7 +97,7 @@ function generate_typoImage()
 function generate_46spImage()
 {
   var randomImage = Math.round(Math.random() * (45) + 1);
-  src = "46-summer-pictures/image/" + randomImage + ".jpg";
+  src = "46-summer-pictures/image/" + randomImage + ".JPG";
 
   var image = document.getElementById("46spImage");
   image.setAttribute("src", src);
