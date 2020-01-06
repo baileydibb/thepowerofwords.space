@@ -2,12 +2,13 @@
 
 <html>
   <head>
-    <title>Kay Rosen</title>
+    <title>Kay Rosen | The Power Of Words</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../study.css">
     <link rel="stylesheet" type="text/css" href="../../page.css">
     <script src="../../menu.js" charset="utf-8"></script>
+    <script src="../view.js" charset="utf-8"></script>
   </head>
 
   <body>
@@ -27,71 +28,103 @@
 
     </nav>
 
-    <main>
-      <div class="left">
-        <a href="image/artist-work/1.jpg">
-          <img src="image/artist-work/1.jpg" />
-        </a>
-        <a href="image/artist-work/2.jpg">
-          <img src="image/artist-work/2.jpg" />
-        </a>
-        <a href="image/artist-work/3.jpg">
-          <img src="image/artist-work/3.jpg" />
-        </a>
-        <a href="image/artist-work/4.jpg">
-          <img src="image/artist-work/4.jpg" />
-        </a>
-        <a href="image/artist-work/5.jpg">
-          <img src="image/artist-work/5.jpg" />
-        </a>
-      </div>
+    <div id="studyName">
+      <h1>Kay Rosen</h1>
+      <hr />
+    </div>
 
-      <div class="right">
-        <a href="image/artist-work/6.jpg">
-          <img src="image/artist-work/6.jpg" />
-        </a>
-        <a href="image/artist-work/7.jpg">
-          <img src="image/artist-work/7.jpg" />
-        </a>
-        <a href="image/artist-work/8.jpg">
-          <img src="image/artist-work/8.jpg" />
-        </a>
+    <main>
+      <div class="example-work">
+        <h1>Examples of Kay Rosen's Work</h1>
+
+        <div class="left">
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/1.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/2.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/3.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/4.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/5.jpg" />
+          </a>
+        </div>
+
+        <div class="right">
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/6.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/7.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/artist-work/8.jpg" />
+          </a>
+        </div>
+
+        <p>
+          Kay Rosen's work plays around with the physical aspects
+          of words, using position and highlighting to reveal
+          hidden words or meaning.
+        </p>
       </div>
 
       <hr />
 
-      <div class="left">
-        <a href="image/my-work/1.jpg">
-          <img src="image/my-work/1.jpg" />
-        </a>
-        <a href="image/my-work/2.jpg">
-          <img src="image/my-work/2.jpg" />
-        </a>
-        <a href="image/my-work/3.jpg">
-          <img src="image/my-work/3.jpg" />
-        </a>
-        <a href="image/my-work/4.jpg">
-          <img src="image/my-work/4.jpg" />
-        </a>
-      </div>
+      <div class="my-work">
+        <h1>My Work In Response</h1>
 
-      <div class="right">
-        <a href="image/my-work/5.jpg">
-          <img src="image/my-work/5.jpg" />
-        </a>
-        <a href="image/my-work/6.jpg">
-          <img src="image/my-work/6.jpg" />
-        </a>
-        <a href="image/my-work/7.jpg">
-          <img src="image/my-work/7.jpg" />
-        </a>
-        <a href="image/my-work/8.jpg">
-          <img src="image/my-work/8.jpg" />
-        </a>
+        <div class="left">
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/1.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/2.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/3.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/4.jpg" />
+          </a>
+        </div>
+
+        <div class="right">
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/5.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/6.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/7.jpg" />
+          </a>
+          <a href="javascript:void(0);" onclick="display(this)">
+            <img src="image/my-work/8.jpg" />
+          </a>
+        </div>
+
+        <p>
+          For this response I thought of phrases and words that
+          can be highlighted or positioned in a certain way to
+          reveal meaning or add to existing meaning.
+        </p>
       </div>
 
       <br />
     </main>
+
+    <div id="view" onclick="display()">
+      <div id="view-img">
+        <img src="" />
+      </div>
+      <p>Click anywhere to exit</p>
+    </div>
 
     <footer>
       <p>
