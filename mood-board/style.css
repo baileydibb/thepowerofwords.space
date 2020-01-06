@@ -1,9 +1,10 @@
 main
 {
+  text-align: center;
   margin: auto;
   width: 50%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 .left
@@ -16,6 +17,12 @@ main
 {
   width: 49%;
   float: right;
+}
+
+h1
+{
+  text-align: center;
+  font-size: 70px;
 }
 
 main img
@@ -33,9 +40,31 @@ br
 
 #qr
 {
-  display: block;
+  display: inline-block;
   margin: auto;
-  width: 50%;
+  max-width: 20%;
+  padding-bottom: 5vh;
+}
+
+#view
+{
+  display: none;
+  text-align: center;
+  height: 90vh;
+  width: 90%;
+  padding: 1% 5%;
+}
+
+#view-img
+{
+  height: 90%;
+  width: 100%;
+}
+
+#view img
+{
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1300px)
