@@ -1,20 +1,30 @@
-window.onload =
-function generate_studyImage()
+window.onload = function generate_studyImage()
 {
   var studies = [["barbara-kruger", 8],
                  ["bob-and-roberta-smith", 11],
                  ["douglas-coupland", 10],
                  ["kay-rosen", 8],
+                 ["lawrence-weiner", 9],
                  ["logos", 7],
-                 ["typography", 12]];
+                 ["tauba-auerbach", 7],
+                 ["typography", 12]
+                ];
 
   var randomStudy = Math.round(Math.random() * (studies.length - 1));
 
   var randomImage = Math.round(Math.random() * (studies[randomStudy][1] - 1) + 1);
+  if (randomStudy == 4)
+  {
+    src = "studies/" + studies[randomStudy][0] + "/image/my-work/" + randomImage + ".png";
+  }
+  else
+  {
   src = "studies/" + studies[randomStudy][0] + "/image/my-work/" + randomImage + ".jpg";
+  }
 
   var studyImage = document.getElementById("studyImage");
   studyImage.setAttribute("src", src);
+  studyImage.onload = function(){calculate_aspect(studyImage);}
 
   generate_moodBoardImage();
 }
@@ -26,6 +36,7 @@ function generate_moodBoardImage()
 
   var moodBoardImage = document.getElementById("moodBoardImage");
   moodBoardImage.setAttribute("src", src);
+  moodBoardImage.onload = function(){calculate_aspect(moodBoardImage);}
 
   generate_finalPieceImage();
 }
@@ -37,4 +48,18 @@ function generate_finalPieceImage()
 
   var finalPieceImage = document.getElementById("finalPieceImage");
   finalPieceImage.setAttribute("src", src);
+  finalPieceImage.onload = function(){calculate_aspect(finalPieceImage);}
+}
+
+function calculate_aspect(image)
+{
+  var container = document.getElementsByClassName("preview-img");
+  container = container[0];
+  var height = image.height;
+  var width = image.width;
+  if (width > height)
+  {
+    var padding = (container.clientHeight - height) / 2;
+    image.style.padding = padding + "px 0px";
+  }
 }
