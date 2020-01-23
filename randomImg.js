@@ -1,6 +1,7 @@
 window.onload = function generate_studyImage()
 {
-  var studies = [["barbara-kruger", 8],
+  var studies = [["46-summer-pictures", 46], 
+		 ["barbara-kruger", 8],
                  ["bob-and-roberta-smith", 11],
                  ["douglas-coupland", 10],
                  ["kay-rosen", 8],
@@ -13,7 +14,11 @@ window.onload = function generate_studyImage()
   var randomStudy = Math.round(Math.random() * (studies.length - 1));
 
   var randomImage = Math.round(Math.random() * (studies[randomStudy][1] - 1) + 1);
-  if (randomStudy == 4)
+  if (randomStudy == 0)
+  {
+    src = "studies/" + studies[randomStudy][0] + "/image/" + randomImage + ".jpg";
+  }
+  else if (randomStudy == 5)
   {
     src = "studies/" + studies[randomStudy][0] + "/image/my-work/" + randomImage + ".png";
   }
@@ -22,6 +27,7 @@ window.onload = function generate_studyImage()
   src = "studies/" + studies[randomStudy][0] + "/image/my-work/" + randomImage + ".jpg";
   }
 
+  alert(src);
   var studyImage = document.getElementById("studyImage");
   studyImage.setAttribute("src", src);
   studyImage.onload = function(){calculate_aspect(studyImage);}
