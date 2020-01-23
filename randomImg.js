@@ -27,7 +27,6 @@ window.onload = function generate_studyImage()
   src = "studies/" + studies[randomStudy][0] + "/image/my-work/" + randomImage + ".jpg";
   }
 
-  alert(src);
   var studyImage = document.getElementById("studyImage");
   studyImage.setAttribute("src", src);
   studyImage.onload = function(){calculate_aspect(studyImage);}
